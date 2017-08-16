@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26228.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAppWithMVC", "TestWithMVC\WebAppWithMVC.csproj", "{FD18EB7D-70FC-4CFA-8D39-B562E5402F24}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC-Login", "..\MVC-Login\MVC-Login.csproj", "{474E6D95-7EFF-46AE-A9AF-50C811873F74}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{FD18EB7D-70FC-4CFA-8D39-B562E5402F24}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FD18EB7D-70FC-4CFA-8D39-B562E5402F24}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FD18EB7D-70FC-4CFA-8D39-B562E5402F24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{474E6D95-7EFF-46AE-A9AF-50C811873F74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{474E6D95-7EFF-46AE-A9AF-50C811873F74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{474E6D95-7EFF-46AE-A9AF-50C811873F74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{474E6D95-7EFF-46AE-A9AF-50C811873F74}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

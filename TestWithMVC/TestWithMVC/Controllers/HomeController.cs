@@ -18,6 +18,10 @@ namespace TestWithMVC.Controllers
         [HttpPost]
         public ActionResult Index(Project project)
         {
+            // Add project values
+            //project.AddPart("Case", "ATX", "http://cdn.mos.cms.futurecdn.net/vs6rTReqdbang9Pcwy7YM9-320-80.png", 167.50);
+            //project.AddPart("Case", "ITX", "http://cdn.mos.cms.futurecdn.net/vs6rTReqdbang9Pcwy7YM9-320-80.png", 103.20);
+
             return RedirectToAction("Edit", "Projects", project);
         }
 

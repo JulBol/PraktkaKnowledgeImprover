@@ -16,7 +16,7 @@
 <img src="~/img/cursor.png" style="position: absolute; right: 10px; bottom: 100px; width: 15px;"/>
 
 <div class="card myStyle">
-    <img class="card-img img-fluid offset-md-5" style="max-width: 50%; " src="~/img/widthProjectComputer.jfif" alt="Card image">
+    <img class="card-img img-fluid offset-md-5" style="max-width: 50%; " src="https://img.bbystatic.com/BestBuy_US/en_US/images/abn/2015/global/buyingguides/pc_gaming/desktop.png" alt="Card image">
     <div class="card-img-overlay col-md-4">
         <h2 class="card-title">Project: @Model.Name</h2>
         <p class="card-text">This Project contains a list with components which are needed to build a Computer by your own.</p>
@@ -42,10 +42,20 @@
 <!--  boostrap table -->
 <div>
     <table class="table table-bordered" style="font-family: 'Saira', sans-serif; border: 1px solid #292b2c !important;">
-        <thead><tr class="myMenu"><th colspan="5">Project: @Model.Name<button class="btn btn-success pointer" style="float: right;">save</button></th></tr></thead>
+        <thead><tr class="myMenu"><th colspan="5">Project: @Model.Name <button class="btn btn-success pointer" style="float: right;">save</button></th></tr></thead>
         <thead><tr style="background-color: grey;" ><th>#ID</th><th>Component</th><th>Name</th><th>Photo</th><th>Price CHF</th></tr></thead>
         <tbody style="background: #E8E9E9;" >
             <!-- -->
+
+            @*@{
+                int id = -1;
+                foreach (var item in Model.Parts)
+                {
+                    id++;
+                    <tr><td class="pl-0 pr-0" width="150"><input id="tblInput" class="btn" value="@Model.Parts[id].Id"></td><td class="pl-0 pr-0"><input id="tblInput" class="btn" value="@Model.Parts[id].Component" /></td><td class="pl-0 pr-0"><input id="tblInput" class="btn" value="@Model.Parts[id].Name" /></td><td class="pl-0 pr-0"><a href="@Model.Parts[id].PicLink">Picture of a Case</a></td><td class="pl-0 pr-0"><input id="tblInput" class="btn" value="@Model.Parts[id].Price" /></td></tr>
+
+                }
+            }*@
             <tr><td class="pl-0 pr-0" width="150" ><input id="tblInput" class="btn" value="#001"></td><td class="pl-0 pr-0"><input id="tblInput" class="btn" value="Case"/></td><td class="pl-0 pr-0"><input id="tblInput" class="btn" value="ATX"/></td><td class="pl-0 pr-0"><a href="http://cdn.mos.cms.futurecdn.net/vs6rTReqdbang9Pcwy7YM9-320-80.png">Picture of a Case</a></td><td class="pl-0 pr-0"><input id="tblInput" class="btn" value="167.50-"/></td></tr>
             <!-- -->
             <tr><td class="pl-0 pr-0"><input id="tblInput" class="btn" value="#002"></td>       <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
