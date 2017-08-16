@@ -1,0 +1,71 @@
+﻿
+@{
+    ViewBag.Title = "Edit";
+}
+
+<!-- Tells razor what kind of model we are working with -->
+@model TestWithMVC.Models.Project
+
+<div class="jumbotron myStyle">
+    <div>
+        <!-- Render the model's name -->
+        <h2 class="text-center display-1" >@Model.Name</h2>
+    </div>
+</div>
+
+<img src="~/img/cursor.png" style="position: absolute; right: 10px; bottom: 100px; width: 15px;"/>
+
+<div class="card myStyle">
+    <img class="card-img img-fluid offset-md-5" style="max-width: 50%; " src="~/img/widthProjectComputer.jfif" alt="Card image">
+    <div class="card-img-overlay col-md-4">
+        <h2 class="card-title">Project: @Model.Name</h2>
+        <p class="card-text">This Project contains a list with components which are needed to build a Computer by your own.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+</div>
+</div>
+<br /><br /><br />
+
+
+<!-- 
+<div>
+    <div class="card mb-3 col-md-3">
+        <img class="card card-img img-fluid" src="~/img/none.jpg" alt="Card image cap">
+        <div class="card-block">
+            <h4 class="card-title">Card title</h4>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+    </div>
+</div>
+-->
+
+<!--  boostrap table -->
+<div>
+    <table class="table table-bordered" style="font-family: 'Saira', sans-serif; border: 1px solid #292b2c !important;">
+        <thead><tr class="myMenu"><th colspan="5" class="">Project: @Model.Name<button class="btn btn-success" style="float: right;">save</button></th></tr></thead>
+        <thead><tr style="background-color: grey;" ><th>#ID</th><th>Component</th><th>Name</th><th>Photo</th><th>Price CHF</th></tr></thead>
+        <tbody style="background: #E8E9E9;" >
+            <!-- -->
+            <tr><td class="pl-0 pr-0" width="150" ><input id="tblInput" class="btn" value="#001"></td><td class="pl-0 pr-0"><input id="tblInput" class="btn" value="Case"/></td><td class="pl-0 pr-0"><input id="tblInput" class="btn" value="ATX"/></td><td class="pl-0 pr-0"><a href="http://cdn.mos.cms.futurecdn.net/vs6rTReqdbang9Pcwy7YM9-320-80.png">Picture of a Case</a></td><td class="pl-0 pr-0"><input id="tblInput" class="btn" value="167.50-"/></td></tr>
+            <!-- -->
+            <tr><td class="pl-0 pr-0"><input id="tblInput" class="btn" value="#002"></td>      <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td></td><td></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+        </tbody>
+    </table>
+</div>
+
+
+
+<!--  different iframes from embed excel-tables.
+<div>
+    <iframe width="100%" height="400" src="https://docs.google.com/spreadsheets/d/1AKf1CrIiqaMqXhhEGBHeqedtOmZ4vwZl8JlJTgAHyTE/pubhtml?widget=true&amp;headers=false"></iframe>
+    <br /><br />
+    <iframe width="100%" height="400" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?cid=AE63EF8314BA8DAF&resid=AE63EF8314BA8DAF%21458&authkey=AF17ypm_IxwTLI8&em=2&AllowTyping=True&wdHideHeaders=True&wdDownloadButton=True"></iframe>
+    <br /><br />
+    <iframe width="100%" height="400" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?cid=AE63EF8314BA8DAF&resid=AE63EF8314BA8DAF%21458&authkey=AF17ypm_IxwTLI8&em=2&AllowTyping=True&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True"></iframe>
+</div>
+-->

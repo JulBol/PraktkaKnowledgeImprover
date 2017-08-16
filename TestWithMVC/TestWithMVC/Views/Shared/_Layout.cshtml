@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Meine ASP.NET-Anwendung</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+    <link href="https://fonts.googleapis.com/css?family=Saira" rel="stylesheet"> 
+</head>
+<body>
+    <nav class="nav navbar-inverse text-white bg-inverse form-inline fixed-top" style=" font-family: 'Saira', sans-serif;">
+        <div class="col-md-4" >
+            <a href="http://localhost:65050/" class="navbar-brand" style="font-size: 25px;" >MVC-Project</a>
+        </div>
+        <div class="ml-auto mr-3 pointer" >
+            <a href="Home/Contact.cshtml" class="myMenu" >Contact</a>
+            <a>|</a>
+            <a href="Home/About.cshtml" class="myMenu" >About</a>
+            <a>|</a>
+            <a href="Home/_ViewStart.cshtml" name="SettingModal" class="myMenu" >Settings</a>
+        </div>
+    </nav>
+
+
+    <div class="container body-content mt-4">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - Meine ASP.NET-Anwendung</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

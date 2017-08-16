@@ -1,0 +1,42 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+@model TestWithMVC.Models.Project
+
+<div class="jumbotron form-group">
+    @using (Html.BeginForm())
+    {
+        <div class="row ml-auto mr-auto col-md-6">
+            @Html.TextBoxFor(model => model.Name, new { placeholder = "Create a Project ..", @class = "form-control col-8" })
+            <input class="btn btn-success col-4 pointer" type="submit" name="btnCreateProject" value="Create Project" />
+        </div>
+    }
+</div>
+
+<div class="row">
+    <div class="card col-md-4" style="width: 20rem;">
+        <img class="card-img-top" src="~/img/projectComputer.png" alt="Project: Computer" height="225">
+        <div class="card-block">
+            <h4 class="card-title">Project: Computer</h4>
+            <p class="card-text">This Project contains a list with components which are needed to build a Computer by your own.</p>
+            <a href="Projects/Edit" class="btn btn-primary">Open Project.</a>
+        </div>
+    </div>
+    <div class="card col-md-4" style="width: 20rem;">
+        <img class="card-img-top" src="~/img/standard.jpg" alt="Card image cap" height="225">
+        <div class="card-block">
+            <h4 class="card-title">Card title</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+    <div class="card col-md-4" style="width: 20rem;">
+        <img class="card-img-top" src="~/img/standard.jpg" alt="Card image cap" height="225">
+        <div class="card-block">
+            <h4 class="card-title">Card title</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+</div>
