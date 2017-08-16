@@ -160,6 +160,7 @@
     <Content Include="img\none.jpg" />
     <Content Include="img\ProjectComputer.png" />
     <Content Include="img\standard.jpg" />
+    <Content Include="img\table\case.png" />
     <Content Include="img\widthProjectComputer.jfif" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />

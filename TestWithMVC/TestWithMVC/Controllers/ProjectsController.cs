@@ -26,6 +26,7 @@ namespace TestWithMVC.Controllers
         [Route("/Projects/Edit")]
         public ActionResult Edit(Project project)
         {
+            if (project.Name == null) { project.Name = "Computer"; }
             return this.View(model: project);
         }
     }
